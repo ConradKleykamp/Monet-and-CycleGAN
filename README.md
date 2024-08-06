@@ -3,12 +3,20 @@ Using GANs to Create Monet Style Art (CycleGAN)
 
 ![image](https://github.com/user-attachments/assets/8d444ba6-49de-41cb-9956-f822d63fa7ec)
 
+---
+
 ### Objective
 This project was completed as part of CU Boulder's Introduction to Deep Learning course and as part of Kaggle's "I'm Something of a Painter Myself" competition. The dataset is publicly accessible on Kaggle and contains four directories: monet_tfrec, photo_tfrec, monet_jpg, and photo_jpg. The monet directories contain 300 Monet paintings, each sized as 256x256 pixels. Each Monet directory contains these paintings in either JPEG format or TFRecord format. The photo directories contain 7028 photos, each sized as 256x256 pixels. Each photo is stored as both a JPEG or a TFRecord. The objective of this project is to develop a generative adversarial network (GAN) which will work to convert regular photo images into Monet style paintings. As this is an adversarial model, the generator and the discriminator will work in opposition to eventually create more and more realistic Monet style images. The performance of the GAN will be analyzed via its loss.
 
 ---
 
 ### Methods
+Libraries Used
+- matplotlib
+- numpy
+- seaborn
+- tensorflow (keras, layers)
+
 CycleGAN
 - Able to do style transfer, which is the main objective of this project
 - Able to train without the use of paired data
